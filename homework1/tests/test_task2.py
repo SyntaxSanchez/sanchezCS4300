@@ -21,6 +21,17 @@ def test_string_value():
     assert string() == "Hello, there"
 
 def testBoolean():
-    assert boolean() is True
+    assert isinstance(boolean(),bool)
 
+# parameterized test
+@pytest.mark.parametrize("function, expected_type",
+                         [
+                         (integer, int),
+                         (floating, float),
+                         (string, str),
+                         (boolean, bool),
+                        ],
+                    )
+def testType(function, expected_type):
+        assert isinstance(function(), expected_type)
 

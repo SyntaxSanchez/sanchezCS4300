@@ -1,4 +1,6 @@
-# task5.py
+# task5
+# Sebastian Sanchez
+# CS4300
 
 # List of books (title, author)
 books = [
@@ -17,10 +19,11 @@ studentDatabase = {
     "Diana": "S4"
 }
 
-# Functions for testability
+# Function to get the first three books
 def booksThree():
     return books[:3]
 
+# Function to get the student ID, based on student name
 def studentID(name):
     return studentDatabase.get(name)
 
