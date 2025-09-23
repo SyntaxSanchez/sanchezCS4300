@@ -1,24 +1,43 @@
- cs4300 /
-2 | - - homework1 /
-3 | | - - src /
-4 | | | - - task1 . py
-5 | | | - - task2 . py
-6 | | | - - task3 . py
-7 | | | - - task4 . py
-8 | | | - - task5 . py
-9 | | | - - task6 . py
-10 | | \ - - task7 . py
-11 | | - - tests /
-12 | | | - - test task1 . py
-13 | | | - - test task2 . py
-14 | | | - - test task3 . py
-15 | | | - - test task4 . py
-16 | | | - - test task5 . py
-17 | | | - - test task6 . py
-18 | | \ - - test task7 . py
-19 | | - - task6 read me . txt
-20 | | - - pyproject . toml # pytest config ( optional )
-21 | \ - - README . md # how to run your code and tests
-22 \ - - homework2 /
+Homework 1 Structure
+
+CS4300
+    Homework1
+        Src
+            task1.py
+            task2.py
+            task3.py
+            task4.py
+            task5.py
+            task6.py
+            task7.py
+        tests
+            test task1.py
+            test task2.py
+            test task3.py
+            test task4.py
+            test task5.py
+            test task6.py
+            test task7.py
+        task6 read me.txt
+        README.md
+
+(Requirments)
+This homework Assignmnet requires the following packages
+pytest
+request
+
+How to download?
+
+    pip install pytest
+    pip install request
+
+How to run the code
+    cd src
+    python3 task*.py
+
+How to run the test
+    cd test
+    pytest (for all test)
+    pytest test task*.py
 
 
