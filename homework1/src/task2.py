@@ -9,3 +9,6 @@ def floating():
 def string():
     return "Hello, there"
     print(x)
+
+def boolean():
+    return True

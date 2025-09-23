@@ -1,4 +1,13 @@
-from src.task1 import helloWorld
+import pytest
+import os
+import sys
 
-def test_confirmation():
-    assert helloWorld  == "Hello, World!"
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+from task1 import helloWorld
+
+def testConfirmation():
+    assert helloWorld()  == "Hello, World!"
+
+
+
+

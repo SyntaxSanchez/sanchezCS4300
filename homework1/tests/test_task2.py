@@ -1,6 +1,6 @@
 
 import pytest
-from task2 import integer, floating, string
+from task2 import integer, floating, string, boolean
 
 # Test integer
 def test_integer_type():
@@ -19,4 +19,8 @@ def test_string_type():
     assert isinstance(string(), str)
 def test_string_value():
     assert string() == "Hello, there"
+
+def testBoolean():
+    assert boolean() is True
+
 
