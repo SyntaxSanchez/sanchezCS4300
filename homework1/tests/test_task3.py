@@ -1,5 +1,8 @@
 # test_task3.py
+import os
+import sys
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 import pytest
 from task3 import numberSignCheck, primesTen, sum_1_to_100, isPrime
 
