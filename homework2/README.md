@@ -16,6 +16,20 @@ Enable python virtual environment
     source myenv / bin / activate
     pip install django djangorestframework
 
+Install Dependencies
+
+    pip install -r requirements.txt
+
+Apply Migrations
+
+    python manage.py makemigrations bookings
+    python manage.py migrate
+
+Run the local development Server
+
+    python manage.py runserver 0.0.0.0:3000
+
+
 AI Usage
 Used ChatGPT / Copilot:
 
