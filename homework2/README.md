@@ -7,6 +7,7 @@ An online movie ticket booking system built with Django. Explore currently showi
 
 
 Local-Host / Clone Setup
+
     git clone https://github.com/SyntaxSanchez/sanchezCS4300
 
 Enable python virtual environment
