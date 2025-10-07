@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 
+import dj_database_url
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -57,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'movie_theather_booking.urls'
@@ -145,3 +149,13 @@ CSRF_TRUSTED_ORIGINS = [
 LOGIN_REDIRECT_URL = 'movie_list'
 LOGOUT_REDIRECT_URL = 'login'
 LOGIN_URL = 'login'
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default='sqlite:///{}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+    )
+}
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
