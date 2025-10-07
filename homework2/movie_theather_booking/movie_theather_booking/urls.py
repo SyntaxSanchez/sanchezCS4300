@@ -27,6 +27,6 @@ router.register(r'bookings', BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),             # DRF API endpoints
-    path('', include('bookings.urls')),             # App's frontend views (movie list, booking, etc.)
+    path('api/', include(router.urls)),            
+    path('', include('bookings.urls')),           
 ]

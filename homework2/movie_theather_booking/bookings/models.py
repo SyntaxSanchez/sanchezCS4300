@@ -22,7 +22,7 @@ class Seat(models.Model):
 class Booking(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     seat = models.ForeignKey(Seat, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  # ✅ Make optional
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  
     booking_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
