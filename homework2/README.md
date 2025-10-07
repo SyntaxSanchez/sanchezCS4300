@@ -19,7 +19,9 @@ Enable python virtual environment
 AI Usage
 Used ChatGPT / Copilot:
 
-Generate HTML templates
-Generate test cases
+Generated HTML templates
+
+Generated test cases
+
 Guidance to deploy the web-service app with render.com
 
