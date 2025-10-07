@@ -35,6 +35,8 @@ ALLOWED_HOSTS = [
     'localhost',
     'editor-cs4300sanchez-19.devedu.io',
     'https://app-cs4300sanchez-19.devedu.io',
+    'sanchezcs4300.onrender.com',
+    'sanchezcs4300.onrender.com',
 ]
 
 
